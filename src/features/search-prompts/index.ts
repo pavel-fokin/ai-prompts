@@ -1,0 +1,1 @@
+export { SearchPrompts } from './search-prompts';
