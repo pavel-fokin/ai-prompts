@@ -1,0 +1,11 @@
+.submit-prompt-page {
+  padding: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.submit-prompt-page__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}

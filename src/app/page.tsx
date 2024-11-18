@@ -2,7 +2,6 @@
 
 import { SearchPrompts } from '@/features/search-prompts';
 import { PromptCard } from '@/features/prompt-card';
-import { Header } from '@/features/header';
 
 import styles from './page.module.css';
 
@@ -66,7 +65,6 @@ const prompts = [
 export default function Home() {
   return (
     <div className={styles['page']}>
-      <Header />
       <main className={styles['page__main']}>
         <div className={styles['page__search-prompts']}>
           <SearchPrompts />

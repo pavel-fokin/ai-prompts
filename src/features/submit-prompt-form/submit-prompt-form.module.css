@@ -1,0 +1,16 @@
+.submit-prompt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.submit-prompt-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.submit-prompt-form__actions {
+  display: flex;
+  justify-content: flex-end;
+}

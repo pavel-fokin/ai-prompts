@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 
 import '@radix-ui/themes/styles.css';
 
+import { Header } from '@/features/header';
+
 import { Theme } from './theme';
 import './globals.css';
 
@@ -18,7 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Theme>{children}</Theme>
+        <Theme>
+          <Header />
+          {children}
+        </Theme>
       </body>
     </html>
   );
