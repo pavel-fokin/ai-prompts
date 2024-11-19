@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   padding: 24px 16px;
 }
@@ -13,5 +13,5 @@
 .header__actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }

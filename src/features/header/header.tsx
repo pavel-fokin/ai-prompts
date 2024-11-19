@@ -7,7 +7,9 @@ import styles from './header.module.css';
 export const Header = () => {
   return (
     <header className={styles['header']}>
-      <h1 className={styles['header__title']}>AI Prompts</h1>
+      <Link href="/">
+        <h1 className={styles['header__title']}>AI Prompts</h1>
+      </Link>
       <div className={styles['header__actions']}>
         <Button asChild variant="ghost" highContrast size="3">
           <Link href="/login">Log in</Link>

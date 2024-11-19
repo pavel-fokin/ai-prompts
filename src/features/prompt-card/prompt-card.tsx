@@ -1,10 +1,13 @@
+import Link from 'next/link';
+
 import { Avatar } from '@/components/ui/avatar';
 
 import styles from './promt-card.module.css';
 
 interface PromptCardProps {
+  id: string;
   title: string;
-  description: string;
+  prompt: string;
   tags: string[];
 }
 
@@ -12,8 +15,9 @@ interface PromptContributorProps {
   contributor: string;
 }
 
-const PromptCard = ({ title, description, tags }: PromptCardProps) => {
+const PromptCard = ({ id, title, prompt, tags }: PromptCardProps) => {
   return (
+    <Link href={`/prompt/${id}`}>
     <article
       className={styles['prompt-card']}
       aria-labelledby="prompt-title"
@@ -24,10 +28,11 @@ const PromptCard = ({ title, description, tags }: PromptCardProps) => {
       </h2>
       <PromptContributor contributor="John Doe" />
       <p id="prompt-description" className={styles['prompt-card__description']}>
-        {description}
+        {prompt}
       </p>
       <PromptTags tags={tags} />
-    </article>
+      </article>
+    </Link>
   );
 };
 
